@@ -1,0 +1,33 @@
+# Dashboard Configuration
+app:
+  title: "EquipTrack - Machine Usage Dashboard"
+  icon: "🏭"
+  layout: "wide"
+
+# Data Configuration
+data:
+  file_path: "data/machine_data.xlsx"
+  required_columns:
+    - "Machine_ID"
+    - "Machine_Type"
+    - "Status"
+    - "Hours_Daily"
+    - "Site"
+    - "Target_Utilization"
+
+# Chart Configuration
+charts:
+  colors:
+    primary: "#3b82f6"
+    success: "#10b981"
+    warning: "#f59e0b"
+    danger: "#ef4444"
+    
+# Filter Configuration
+filters:
+  date_ranges:
+    - "Last 30 Days"
+    - "Last 3 Months"  
+    - "Last 6 Months"
+    - "This Year"
+    - "All Time"
